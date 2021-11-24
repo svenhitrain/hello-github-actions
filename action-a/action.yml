@@ -4,29 +4,28 @@ description: "Greet someone"
 author: "octocat@github.com"
 
 
+inputs:
 	
-	inputs:
+  MY_NAME:
 	
-	  MY_NAME:
+    description: "Who to greet"
 	
-	    description: "Who to greet"
+    required: true
 	
-	    required: true
-	
-	    default: "World"
-	
-	
-	
-	runs:
-	
-	  using: "docker"
-	
-	  image: "Dockerfile"
+    default: "World"
 	
 	
 	
-	branding:
+runs:
+
+  using: "docker"
 	
-	  icon: "mic"
+  image: "Dockerfile"
 	
-    color: "purple"
+	
+	
+branding:
+	
+  icon: "mic"
+	
+  color: "purple"
